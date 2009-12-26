@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Kikouken Example</title>
+    
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="scripts/swfobject.js"></script>
+  </head>
+  
+  <body>
+    <div id="flashcontent"></div> 
+
+    <script type="text/javascript">
+      var so = new SWFObject("KikoukenExample.swf", "KikoukenExample", "640", "400", "10", "#ffffff");
+      so.addParam("allowScriptAccess", "always");
+      so.write("flashcontent");
+    </script>
+  </body>
+</html>
